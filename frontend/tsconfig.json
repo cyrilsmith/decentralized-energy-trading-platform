@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+      "target": "es5",                           // Targeting ES5 for compatibility with older browsers
+      "lib": ["dom", "dom.iterable", "esnext"],  // Includes necessary libraries for DOM and ESNext
+      "allowJs": true,                           // Allows JavaScript files to be compiled
+      "skipLibCheck": true,                      // Skips type checking of all declaration files (.d.ts)
+      "esModuleInterop": true,                   // Enables interoperability between CommonJS and ES modules
+      "allowSyntheticDefaultImports": true,      // Allows default imports from modules with no default export
+      "strict": true,                            // Enables strict type-checking options
+      "forceConsistentCasingInFileNames": true,  // Disallows inconsistently-cased references to the same file
+      "module": "esnext",                        // Specifies the module code generation method (ESNext modules)
+      "moduleResolution": "node",                // Resolves modules using Node.js module resolution strategy
+      "resolveJsonModule": true,                 // Allows importing JSON files
+      "isolatedModules": true,                   // Ensures every file is treated as a module (required for React)
+      "noEmit": true,                            // Disables emitting files from the TypeScript compiler
+      "jsx": "react-jsx",                        // Use the new JSX transform from React 17
+      "types": ["node", "react", "react-dom"],   // Includes types for Node, React, and React DOM
+      "baseUrl": "./src",                        // Base directory to resolve non-relative module names
+      "paths": {
+        "@components/*": ["components/*"],       // Aliases for components directory
+        "@utils/*": ["utils/*"]                  // Aliases for utils directory
+      }
+    },
+    "include": ["src"],                          // Specifies files or directories to include in the project
+    "exclude": ["node_modules", "build"]         // Excludes node_modules and build directories from the project
+  }
+  
